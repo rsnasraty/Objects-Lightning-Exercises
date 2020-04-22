@@ -64,11 +64,17 @@ const nashvilleSoftwareSchool = {
     },
     address: "500 Interstate Blvd. S"
 }
-Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console.
+/* Lightning Exercise 1: Output the names of the part-time instructors followed by the names of the full-time instructors in the console. */
+const partTimeInstructors = nashvilleSoftwareSchool.instructors.partTime
+for (let i = 0; i < partTimeInstructors.length; i++) {
+    console.log(partTimeInstructors[i])
+}
 
-const partTimeInstructors =
+const fullTimeInstructors = nashvilleSoftwareSchool.instructors.fullTime
+for (let i = 0; i < fullTimeInstructors.length; i++) {
+    console.log(fullTimeInstructors[i])
+}
 
+// Lightning Exercise 2: Output only Andy and Zoe in the console.
 
-
-
-Lightning Exercise 2: Output only Andy and Zoe in the console.
+console.log(nashvilleSoftwareSchool.instructors.fullTime[4]);console.log(nashvilleSoftwareSchool.instructors.partTime[0]);
